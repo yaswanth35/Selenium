@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24283" started-at="2019-01-22T09:33:09Z" finished-at="2019-01-22T09:33:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24283" started-at="2019-01-22T09:33:09Z" finished-at="2019-01-22T09:33:33Z">
+      <class name="com.com.TestNG.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="beforeMethod" is-config="true" duration-ms="10448" started-at="2019-01-22T09:33:09Z" finished-at="2019-01-22T09:33:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="logintest" duration-ms="533" started-at="2019-01-22T09:33:20Z" data-provider="test" finished-at="2019-01-22T09:33:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yaswanth]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="afterMethod" is-config="true" duration-ms="357" started-at="2019-01-22T09:33:20Z" finished-at="2019-01-22T09:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="beforeMethod" is-config="true" duration-ms="9920" started-at="2019-01-22T09:33:21Z" finished-at="2019-01-22T09:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="logintest" duration-ms="587" started-at="2019-01-22T09:33:30Z" data-provider="test" finished-at="2019-01-22T09:33:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yaswanth23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.com.TestNG.NewTest@3e6fa38a]" name="afterMethod" is-config="true" duration-ms="2366" started-at="2019-01-22T09:33:31Z" finished-at="2019-01-22T09:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.com.TestNG.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

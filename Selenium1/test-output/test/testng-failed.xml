@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test]">
+  <test thread-count="5" name="Logintest(failed)">
+    <groups>
+      <run>
+        <include name="smoketest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.TestNG.Logintest">
+        <methods>
+          <include name="logintest"/>
+          <include name="logintest2"/>
+        </methods>
+      </class> <!-- com.TestNG.Logintest -->
+    </classes>
+  </test> <!-- Logintest(failed) -->
+</suite> <!-- Failed suite [test] -->

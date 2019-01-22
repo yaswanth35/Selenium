@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Regression" parallel = "classes" thread-count="5">
+<test name ="Application test">
+<parameter name="Browser" value="chrome"></parameter>
+<parameter name="Browser2" value="firefox"></parameter>
+<classes> 
+
+<class name = "com.TestNG.Logintest"> 
+<!--
+<methods>
+<include name= "Urltest"></include>
+</methods>
+-->
+</class>
+<class name="com.TestNG.FreeCrm"> </class>
+
+</classes>
+</test>
+
+
+
+
+
+</suite>
