@@ -23,14 +23,14 @@ import org.testng.Assert;
 public class Logintest extends Tesbase  {
 	
 	
-@Parameters("Browser")
-	@BeforeMethod
+
+	//@BeforeMethod
 	
-	public void Launchapp(String Browser) {
+	//public void Launchapp() {
 	
-	initialization(Browser);
+	//initialization();
 		
-	}
+	//}
 
 	@Test(priority=3, groups = "smoketest" , enabled = false)
 	
@@ -84,12 +84,14 @@ public class Logintest extends Tesbase  {
 	}
 	}
 		
-	@AfterMethod
+	//@AfterMethod
 	
-	public void logout() {
+	//public void logout() {
 		
-		driver.close();
-	}
+		//driver.close();
+		
+		
+	//}
 
 	public static void Flash(WebElement element, WebDriver driver) {
 		

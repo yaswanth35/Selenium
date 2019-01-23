@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class Tesbase {
 	
@@ -18,23 +20,38 @@ public class Tesbase {
 	@SuppressWarnings("resource")
 	
 		
-			public static void initialization(String Browser) {
+			public static void initialization() {
 		
-		if(Browser.equalsIgnoreCase("chrome")) {
+		//if(Browser.equalsIgnoreCase("chrome")) {
 				
 		
 				
 			driver = new ChromeDriver();
 			
 			driver.get("https://www.freecrm.com/index.html");
-		}
-		else if(Browser.equalsIgnoreCase("firefox")) {
+		//}
+		//else if(Browser.equalsIgnoreCase("firefox")) {
 			
-			driver = new FirefoxDriver();
-			driver.get("https://www.freecrm.com/index.html");
-		}
-			
+		//	driver = new FirefoxDriver();
+		//	driver.get("https://www.freecrm.com/index.html");
+		//}
+	}
+		@BeforeMethod
 		
+		public void setup() {
+			
+			
+			initialization();
+			
+			
+		}
+		
+		@AfterMethod
+		
+		public void cleanup() {
+			
+			driver.close();
+		}
 				
 }
-}
+
