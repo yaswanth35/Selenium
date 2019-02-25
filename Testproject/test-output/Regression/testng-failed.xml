@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="classes">
+  <test thread-count="4" name="Application test(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.TestNG.FreeCrm">
+        <methods>
+          <include name="logintest"/>
+          <include name="logout"/>
+          <include name="Launchapp"/>
+        </methods>
+      </class> <!-- com.TestNG.FreeCrm -->
+      <class name="com.TestNG.Logintest">
+        <methods>
+          <include name="logintest" invocation-numbers="1"/>
+          <include name="Launchapp"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.TestNG.Logintest -->
+    </classes>
+  </test> <!-- Application test(failed) -->
+</suite> <!-- Failed suite [Regression] -->
